@@ -15,8 +15,7 @@ class Manager extends Employee {
         System.out.println("Manager is conducting a meeting");
     }
 }
-
-public class Main {
+ class Main {
 
     public static void main(String[] args) {
 
