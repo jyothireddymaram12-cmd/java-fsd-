@@ -7,11 +7,11 @@ public class ShoppingCart {
     private Product[] items = new Products[10];
     // good: Arraylist with dynamic size
     private List<Product> items = new ArrayList<>();
-    public void addProduct(Product  product){
+    public void addProduct(Product product){
         items.add(product)
     } 
 }
-// 2.ADDING ELEMENTS
+/*// 2.ADDING ELEMENTS
 student.add("jyothi")
 student.add("jyothi")
 student.add("jyothi")
@@ -50,4 +50,5 @@ System.out.println()
 for(String student : students)
 
 
+ */
 
