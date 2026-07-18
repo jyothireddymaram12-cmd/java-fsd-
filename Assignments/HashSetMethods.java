@@ -6,7 +6,7 @@ class HashSetMethods {
         HashSet<String> set = new HashSet<>();
         HashSet<String> set2 = new HashSet<>();
 
-        // add()
+        
         set.add("Java");
         set.add("Python");
         set.add("C");

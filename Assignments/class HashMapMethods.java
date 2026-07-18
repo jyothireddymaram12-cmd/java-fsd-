@@ -6,24 +6,24 @@ class HashMapMethods {
         HashMap<String,Integer> map = new HashMap<>();
         HashMap<String,Integer> map2 = new HashMap<>();
 
-        // put()
+        
         map.put("Ram",101);
         map.put("Sita",102);
         map.put("Krishna",103);
 
-        // get()
+        
         System.out.println(map.get("Ram"));
 
-        // replace()
+        
         map.replace("Ram",111);
 
-        // containsKey()
+       
         System.out.println(map.containsKey("Sita"));
 
-        // containsValue()
+        
         System.out.println(map.containsValue(103));
 
-        // remove()
+        
         map.remove("Krishna");
 
         // size()
