@@ -1,0 +1,337 @@
+1.PRIMARY KEY
+Syntax
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+     
+Insert Example
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO Student VALUES (101, 'Lahari');
+INSERT INTO Student VALUES (102, 'Anu');
+Error Example
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO Students VALUES (101, 'Lahari');
+INSERT INTO Students VALUES (102, 'Anu');
+INSERT INTO Students VALUES (101, 'Ram');
+Error
+ERROR 1062: Duplicate entry '101' for key 'PRIMARY'
+Solution
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO Students VALUES (101, 'Lahari');
+INSERT INTO Students VALUES (102, 'Anu');
+INSERT INTO Students VALUES (103, 'Ram');
+
+
+2. DEFAULT
+Syntax
+CREATE TABLE Employer (
+    id INT PRIMARY KEY,
+    name VARCHAR(30),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+Insert
+CREATE TABLE Employer (
+    id INT PRIMARY KEY,
+    name VARCHAR(30),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+INSERT INTO Employer(id, name)
+VALUES(1,'jyothi');
+Output
+1 Lahari Hyderabad
+Other than default
+CREATE TABLE Employer (
+    id INT PRIMARY KEY,
+    name VARCHAR(30),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+INSERT INTO Employer(id, name)
+VALUES(1,'jyothi');
+VALUES(2,'shiva','Vijayawada');
+
+
+
+3. UNIQUE
+Syntax
+CREATE TABLE Use (
+    id INT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE
+);
+Insert
+CREATE TABLE Use (
+    id INT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE
+);
+INSERT INTO Use VALUES(1,'abc@gmail.com');
+INSERT INTO Use VALUES(2,'xyz@gmail.com');
+Error Example
+CREATE TABLE Use (
+    id INT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE
+);
+INSERT INTO Use VALUES(1,'abc@gmail.com');
+INSERT INTO Use VALUES(2,'xyz@gmail.com');
+INSERT INTO Use VALUES(3,'abc@gmail.com');
+Error
+ERROR 1062:Duplicate entry 'abc@gmail.com'
+Solution
+CREATE TABLE Use (
+    id INT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE
+);
+INSERT INTO Use VALUES(1,'abc@gmail.com');
+INSERT INTO Use VALUES(2,'xyz@gmail.com');
+INSERT INTO Use VALUES(3,'new@gmail.com');
+
+4. CHECK
+Syntax
+CREATE TABLE Student (
+    id INT,
+    age INT CHECK(age>=18)
+);
+Insert
+CREATE TABLE Student (
+    id INT,
+    age INT CHECK(age>=18)
+);
+INSERT INTO Student VALUES(1,20);
+Error Example
+CREATE TABLE Student (
+    id INT,
+    age INT CHECK(age>=18)
+);
+INSERT INTO Student VALUES(1,20);
+INSERT INTO Student VALUES(2,15);
+Error
+Check constraint violated
+Solution
+CREATE TABLE Student (
+    id INT,
+    age INT CHECK(age>=18)
+);
+INSERT INTO Student VALUES(1,20);
+INSERT INTO Student VALUES(2,18);
+
+5. NOT NULL
+Syntax
+CREATE TABLE Student (
+    id INT,
+    name VARCHAR(30) NOT NULL
+);
+Insert
+CREATE TABLE Student (
+    id INT,
+    name VARCHAR(30) NOT NULL
+);
+INSERT INTO Student VALUES(1,'Lahari');
+Error Example
+CREATE TABLE Student (
+    id INT,
+    name VARCHAR(30) NOT NULL
+);
+INSERT INTO Student VALUES(1,'Lahari');
+INSERT INTO Student(id)VALUES(2);
+Error
+Column 'name' cannot be null
+Solution
+CREATE TABLE Student (
+    id INT,
+    name VARCHAR(30) NOT NULL
+);
+INSERT INTO Student VALUES(1,'Lahari');
+INSERT INTO Student VALUES(2,'Anu');
+
+7. AUTO_INCREMENT
+Syntax
+CREATE TABLE Employee(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30)
+);
+Insert
+CREATE TABLE Employee(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30)
+);
+INSERT INTO Employee(name)
+VALUES('Lahari');
+INSERT INTO Employee(name)
+VALUES('Anu');
+Output
+1 Lahari
+2 Anu
+
+
+
+
+
+
+
+
+
+
+
+8. VOTERS LIST (Simple Example)
+Create Table
+CREATE TABLE Voters(
+    voterid INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT CHECK(age>=18),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+Insert
+CREATE TABLE Voters(
+    voterid INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT CHECK(age>=18),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+INSERT INTO Voters
+VALUES(101,'Lahari',20,'Guntur');
+INSERT INTO Voters(voterid,name,age)
+VALUES(102,'Anu',22);
+Display
+SELECT * FROM Voters;
+Error (Duplicate Primary Key)
+CREATE TABLE Voters(
+    voterid INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT CHECK(age>=18),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+INSERT INTO Voters
+VALUES(101,'Lahari',20,'Guntur');
+INSERT INTO Voters(voterid,name,age)
+VALUES(102,'Anu',22);
+INSERT INTO Voters
+VALUES(101,'Ram',25,'Delhi');
+Error
+Duplicate entry '101'
+Solution
+CREATE TABLE Voters(
+    voterid INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT CHECK(age>=18),
+    city VARCHAR(30) DEFAULT 'Hyderabad'
+);
+INSERT INTO Voters
+VALUES(101,'Lahari',20,'Guntur');
+INSERT INTO Voters(voterid,name,age)
+VALUES(102,'Anu',22);
+INSERT INTO Voters
+VALUES(103,'Ram',25,'Delhi');
+
+
+
+
+
+
+
+
+
+9. DATA TYPES
+INT
+age INT
+Example
+CREATE TABLE T1(
+    age INT
+);
+
+INSERT INTO T1 VALUES(20);
+
+VARCHAR
+name VARCHAR(30)
+Example
+CREATE TABLE T2(
+    name VARCHAR(30)
+);
+
+INSERT INTO T2 VALUES('Lahari');
+
+CHAR
+gender CHAR(1)
+Example
+CREATE TABLE T3(
+    gender CHAR(1)
+);
+
+INSERT INTO T3 VALUES('F');
+
+
+FLOAT
+salary FLOAT
+Example
+CREATE TABLE T4(
+    salary FLOAT
+);
+INSERT INTO T4 VALUES(25000.75);
+
+DOUBLE
+marks DOUBLE
+Example
+CREATE TABLE T5(
+    marks DOUBLE
+);
+INSERT INTO T5 VALUES(95.50);
+
+DECIMAL
+price DECIMAL(10,2)
+Example
+CREATE TABLE T6(
+    price DECIMAL(10,2)
+);
+INSERT INTO T6 VALUES(999.99);
+
+DATE
+dob DATE
+Example
+CREATE TABLE T7(
+    dob DATE
+);
+
+INSERT INTO T7
+VALUES('2005-07-20');
+
+TIME
+login_time TIME
+Example
+CREATE TABLE T8(
+    login_time TIME
+);
+
+INSERT INTO T8
+VALUES('10:30:00');
+
+DATETIME
+login_date DATETIME
+Example
+CREATE TABLE T9(
+    login_date DATETIME
+);
+
+INSERT INTO T9
+VALUES('2026-07-20 10:30:00');
+
+BOOLEAN
+status BOOLEAN
+Example
+CREATE TABLE T10(
+    status BOOLEAN
+);
+
+INSERT INTO T10
+VALUES(TRUE);
+
+
