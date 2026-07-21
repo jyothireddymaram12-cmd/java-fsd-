@@ -19,11 +19,11 @@ public class HighestMarks {
 
         List<Student> students = new ArrayList<>();
 
-        students.add(new Student(1, "Rahul", 75));
-        students.add(new Student(2, "Priya", 58));
-        students.add(new Student(3, "Kiran", 90));
-        students.add(new Student(4, "Sneha", 45));
-        students.add(new Student(5, "Arjun", 68));
+        students.add(new Student(1, "Rahul", 0));
+        students.add(new Student(2, "Priya", 0));
+        students.add(new Student(3, "Kiran", 0));
+        students.add(new Student(4, "Sneha", 0));
+        students.add(new Student(5, "Arjun", 0));
 
         Student topStudent = students.stream()
                 .max(Comparator.comparingInt(student -> student.marks))
