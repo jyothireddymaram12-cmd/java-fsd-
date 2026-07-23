@@ -334,4 +334,87 @@ CREATE TABLE T10(
 INSERT INTO T10
 VALUES(TRUE);
 
+22-07:-
+
+-- Create a new database
+CREATE DATABASE CollegeDB;
+
+-- Switch to the new database
+USE CollegeDB;
+
+-- Students table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
+-- Courses table
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY,
+    StudentID INT,
+    CourseName VARCHAR(50),
+    Credits INT,
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
+
+-- Insertion
+
+-- Correct insert
+INSERT INTO Students (StudentID, StudentName, Department)
+VALUES (1, 'Akhil', 'Computer Science');
+
+-- Insert with only required columns
+INSERT INTO Students (StudentID, StudentName)
+VALUES (2, 'Sneha');
+
+-- Wrong datatype
+INSERT INTO Courses (CourseID, StudentID, CourseName, Credits)
+VALUES (201, 1, 'Java Programming', 'Four');
+-- Error: Credits expects INT
+
+-- Foreign key violation
+INSERT INTO Courses (CourseID, StudentID, CourseName, Credits)
+VALUES (202, 99, 'Python', 3);
+-- Error: No student with ID 99
+
+-- CRUD Operations
+
+-- Create
+INSERT INTO Students (StudentID, StudentName, Department)
+VALUES (3, 'Rahul', 'Information Technology');
+
+-- Read
+SELECT * FROM Students;
+SELECT * FROM Courses WHERE StudentID = 1;
+
+-- Update
+UPDATE Students
+SET Department = 'Cyber Security'
+WHERE StudentID = 1;
+
+-- Delete
+DELETE FROM Students
+WHERE StudentID = 3;
+
+-- DELETE: removes selected rows but keeps table
+DELETE FROM Courses
+WHERE StudentID = 1;
+
+-- TRUNCATE: removes all rows
+TRUNCATE TABLE Courses;
+
+-- DROP: removes table completely
+DROP TABLE Courses;
+
+-- LIMIT and OFFSET
+
+-- Show only first 2 records
+SELECT * FROM Students
+LIMIT 2;
+
+-- Skip first 2 records and show next 2
+SELECT * FROM Students
+LIMIT 2 OFFSET 2;
+
 

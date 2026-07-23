@@ -57,7 +57,9 @@
 48.(https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS48)
 49. (https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS49)
 50. (https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS50)
+
 20-07:-
+
 1. https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS51
 2)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS52
 3)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS53
@@ -68,7 +70,9 @@
 8)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS58
 9)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS59
 10)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS60
+
 21-07:-
+
  1)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS61
 2)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS62
 3)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS63
@@ -79,7 +83,7 @@
 8)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS68
 9)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS69
 10)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS70
- 11)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS71
+11)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS71
 12)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS72
 13)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS73
 14)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS74
@@ -99,6 +103,31 @@
 28)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS88
 29)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS89
 30)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS90
+
+22-07:-
+
+1. https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS91
+2)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS92
+3)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAA93
+4)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS94
+5)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS95
+6)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS96
+7)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS97
+8)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS98
+9)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS99
+10)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS100
+11)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS111
+12)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS112
+13)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS113
+14)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS114
+15)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS115
+16)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS116
+17)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS117
+18)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS118
+19)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS119
+20)https://www.codechef.com/practice/course/java/LPJAAS01/problems/LJAAS120
+
+
 
 
 
